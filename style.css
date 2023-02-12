@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap");
+:root {
+  min-width: 280px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+body {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  background-color: #18181e;
+  background-color: #000;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.break {
+  width: 80%;
+  margin: auto;
+  border-color: rgba(222, 199, 155, 0.6);
+}
+
+.nav nav {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav a {
+  padding-block: 1.7rem;
+  padding-inline: 1.5rem;
+  font-size: 1.3rem;
+  color: #dec79b;
+  text-decoration: none;
+}
+.nav a :hover {
+  color: rgba(222, 199, 155, 0.8);
+}
+
+.block-1 {
+  background-color: #000;
+  position: relative;
+}
+.block-1 .heading {
+  width: max(280px, 45%);
+  background-color: #dec79b;
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+}
+.block-1 .heading h1 {
+  padding-block: 2rem;
+  padding-inline: 3rem 5rem;
+  color: #18181e;
+  font-size: clamp(1.5rem, 10vw, 3.5rem);
+  text-align: left;
+}
+.block-1 .image {
+  width: max(280px, 70%);
+  height: 40rem;
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+}
+.block-1 .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.block {
+  margin-block: 8rem;
+  padding-inline: 3rem;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+}
+.block .paragraph-one {
+  flex: 1 0 250px;
+}
+.block .paragraph-two {
+  flex: 1 0 250px;
+}
+.block h3 {
+  -webkit-margin-after: 0.7rem;
+          margin-block-end: 0.7rem;
+  font-size: 1.5rem;
+}
+.block p {
+  font-size: 1.15rem;
+}
+
+.block-btn-img button {
+  margin-block: 1rem;
+  padding: 0.5rem 1rem;
+  color: #000;
+  font-size: 0.9rem;
+  font-family: inherit;
+  background-color: #dec79b;
+  border: none;
+  cursor: pointer;
+}
+.block-btn-img .image {
+  height: 30rem;
+  background-color: rgba(222, 199, 155, 0.9333333333);
+  flex: 1 0 250px;
+}
+.block-btn-img .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 75%;
+     object-position: 0% 75%;
+}
+
+.block-3 .image {
+  border-top: 2rem solid #000;
+  border-right: 1rem solid #000;
+}
+.block-3 .image div {
+  width: 95%;
+  height: 90%;
+}
+.block-3 .image div img {
+  position: relative;
+  top: -2rem;
+  right: -1rem;
+}
+
+.block-4 {
+  flex-wrap: wrap-reverse;
+}
+.block-4 .image {
+  border-top: 2rem solid #000;
+  border-right: 1rem solid #000;
+}
+.block-4 .image div {
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+  width: 90%;
+  height: 85%;
+}
+.block-4 .image div img {
+  position: relative;
+  top: -2rem;
+  right: -1rem;
+}
+
+.block-5 {
+  -webkit-margin-after: 8rem;
+          margin-block-end: 8rem;
+}
+.block-5 .image {
+  border-top: 1.3rem solid #000;
+  border-left: 3rem solid #000;
+}
+.block-5 .image div {
+  width: 90%;
+  height: 95%;
+}
+.block-5 .image div img {
+  position: relative;
+  top: -1.3rem;
+  left: -3rem;
+}
+
+.block-6 {
+  margin-block: 8rem;
+  padding-inline: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 1.7rem;
+       column-gap: 1.7rem;
+  row-gap: 3rem;
+}
+.block-6 section {
+  flex: 1 0 140px;
+}
+.block-6 section svg {
+  width: 3.3rem;
+  height: 3.3rem;
+  -webkit-margin-after: 0.5rem;
+          margin-block-end: 0.5rem;
+}
+
+.block-8 {
+  -webkit-margin-before: 8rem;
+          margin-block-start: 8rem;
+  color: #000;
+  text-align: left;
+  background-color: #000;
+  position: relative;
+}
+.block-8 .contact {
+  width: max(280px, 50%);
+  padding-block: 3rem;
+  padding-inline: 2rem;
+  background-color: #dec79b;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  translate: 0 -50%;
+}
+.block-8 .contact h3 {
+  -webkit-margin-after: 1.2rem;
+          margin-block-end: 1.2rem;
+  font-size: 2rem;
+}
+.block-8 .contact p {
+  color: rgba(0, 0, 0, 0.8666666667);
+  -webkit-margin-after: 1.2rem;
+          margin-block-end: 1.2rem;
+  font-size: 1.1rem;
+}
+.block-8 .contact span {
+  font-weight: 700;
+  font-size: 1.15rem;
+  display: block;
+}
+.block-8 .image {
+  width: max(280px, 70%);
+  height: 50rem;
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+}
+.block-8 .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  color: #dec79b;
+  font-size: 1.15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+}
+footer a {
+  color: inherit;
+}
