@@ -18,7 +18,7 @@ body {
     color: #fff;
     font-family: 'Nunito', sans-serif;
     text-align: center;
-    background-color: #18181e;
+    // background-color: #18181e;
     background-color: #000;
 }
 
@@ -35,6 +35,7 @@ body {
 
 .nav {
     nav {
+        // background-color: #18181e;
         background-color: #000;
         display: flex;
         justify-content: center;
@@ -55,6 +56,7 @@ body {
 }
 
 .block-1 {
+    // background-color: #18181e;
     background-color: #000;
     position: relative;
 
@@ -89,7 +91,7 @@ body {
 }
 
 .block {
-    margin-block: 8rem;
+    margin-block: 9rem;
     padding-inline: 3rem;
     text-align: left;
     display: flex;
@@ -126,6 +128,11 @@ body {
         background-color: #dec79b;
         border: none;
         cursor: pointer;
+        transition: background .5s;
+
+        &:hover {
+            background-color: #dec79bbb;
+        }
     }
 
     .image {
@@ -149,6 +156,8 @@ body {
     .image {
         border-top: $top solid #000;
         border-right: $right solid #000;
+        // border-top: $top solid #18181e;
+        // border-right: $right solid #18181e;
 
         div {
             width: 95%;
@@ -172,6 +181,8 @@ body {
     .image {
         border-top: $top solid #000;
         border-right: $right solid #000;
+        // border-top: $top solid #18181e;
+        // border-right: $right solid #18181e;
 
         div {
             margin-inline-start: auto;
@@ -191,11 +202,13 @@ body {
     $top : 1.3rem;
     $left: 3rem;
 
-    margin-block-end: 8rem;
+    margin-block-end: 9rem;
 
     .image {
         border-top: $top solid #000;
         border-left: $left solid #000;
+        // border-top: $top solid #18181e;
+        // border-left: $left solid #18181e;
 
         div {
             width: 90%;
@@ -211,7 +224,7 @@ body {
 }
 
 .block-6 {
-    margin-block: 8rem;
+    margin-block: 9rem;
     padding-inline: 3rem;
     display: flex;
     justify-content: center;
@@ -227,30 +240,56 @@ body {
             height: 3.3rem;
             margin-block-end: .5rem;
         }
+
+        h3 {
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 
 .block-7 {
-    margin-block: 8rem;
-    padding-inline: 1rem;
+    margin-block: 9rem;
+    padding-inline: .7rem;
     display: flex;
     justify-content: center;
     align-items: center;
     user-select: none;
+    position: relative;
 
     p {
         z-index: 2;
         cursor: pointer;
 
         svg {
-            width: 3.5rem;
-            height: 3.5rem;
+            width: 3rem;
+            height: 3rem;
             display: block;
         }
     }
 
+    @media (max-width:600px) {
+
+        .previous,
+        .next {
+            position: absolute;
+            bottom: -5rem;
+        }
+
+        .previous {
+            left: 30%;
+        }
+
+        .next {
+            right: 30%;
+        }
+    }
+
     .all-images__wrapper {
-        padding-inline: 1.5rem;
+        padding-inline: 1rem;
 
         .all-images {
             display: flex;
@@ -258,10 +297,11 @@ body {
             overflow: hidden;
 
             div {
-                flex: 1 0 min(35vw, 250px);
+                flex: 1 0 min(70vw, 250px);
                 aspect-ratio: 2/3;
                 position: relative;
-                transition: all 1s;
+                transition-property: transform, background;
+                transition-duration: 1s;
                 transform-origin: 0 0;
 
                 img {
@@ -271,14 +311,19 @@ body {
                 }
             }
 
-            div[class='faint']::after {
+            div::after {
                 content: '';
                 width: 100%;
                 height: 100%;
-                background-image: linear-gradient(to bottom, #000b, #000b);
+                background-color: #0000;
                 position: absolute;
                 left: 0;
                 top: 0;
+                transition: background .5s;
+            }
+
+            div[class='faint']::after {
+                background-color: #000c;
             }
         }
     }
@@ -288,6 +333,7 @@ body {
     margin-block-start: 8rem;
     color: #000;
     text-align: left;
+    // background-color: #18181e;
     background-color: #000;
     position: relative;
 
@@ -307,7 +353,7 @@ body {
         }
 
         p {
-            color: #000d;
+            color: #18181e;
             margin-block-end: 1.2rem;
             font-size: 1.1rem;
         }
@@ -343,5 +389,9 @@ footer {
 
     a {
         color: inherit;
+
+        &:hover {
+            text-decoration-style: dotted;
+        }
     }
 }
